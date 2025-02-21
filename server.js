@@ -10,6 +10,11 @@ app.get("/", (req, res) => {
     res.sendFile(__dirname + "/index.html");
 })
 
+app.post("/submit", (req, res) => {
+    console.log(req.body);
+    res.status(200).sendFile(__dirname + "/success.html");
+})
+
 app.listen(port, () => {
     console.log(`Server listening on port ${port}`);
 })
