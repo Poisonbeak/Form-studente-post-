@@ -8,6 +8,29 @@
     <title>Form studente</title>
 </head>
 <body>
-    <p>Ciao</p>
+    <div id="formStudente">
+        <form action="submit" method="post">
+            <label for="form1nome">Nome:</label>
+            <input type="text" name="nome" id="form1nome">
+            <label for="form1cognome">Cognome:</label>
+            <input type="text" name="cognome" id="form1cognome">
+            <label for="form1mat">Matricola:</label>
+            <input type="text" name="matricola" id="form1mat">
+            <label for="form1dob">Data di nascita:</label>
+            <input type="date" name="dataDiNascita" id="form1dob">
+            <label for="form1dob">Corso:</label>
+            <select name="corso" id="form1corso">
+                <option value="L-1 - Classe delle lauree in Beni culturali">BENI ARCHEOLOGICI: TERRITORIO, INSEDIAMENTI, CULTURA MATERIALE</option>
+                <option value="L-2 - Classe delle lauree in Biotecnologie">BIOTECNOLOGIE</option>
+                <option value="LM-13. - Farmacia e farmacia industriale">CHIMICA E TECNOLOGIA FARMACEUTICHE</option>
+                <option value="L-18 - Classe delle lauree in Scienze dell'economia e della gestione aziendale">ECONOMIA AZIENDALE</option>
+                <option value="L-8 - Classe delle lauree in Ingegneria dell'informazione">INGEGNERIA ELETTRONICA E INFORMATICA</option>
+            </select>
+            <label for="form1commento">Commento sul corso:</label>
+            <textarea name="commento" id="form1commento"></textarea>
+            <button type="reset">Reimposta</button>
+            <button type="submit">Invia</button>
+        </form>
+    </div>
 </body>
 </html>
